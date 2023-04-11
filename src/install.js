@@ -1,11 +1,22 @@
 import Setaria from 'setaria';
 import SetariaUI from 'setaria-ui';
 import locale from 'setaria-ui/lib/locale/lang/zh-CN';
-import Foo from '../package/foo';
+import ProTable from 'setaria-ui/lib/pro-table'
+import EditableProTable from 'setaria-ui/lib/editable-pro-table'
+import SearchPage from '../package/search-page'
+import BasicDialog from '../package/basic-dialog'
+// 业务组件
+
+// 下拉组件
+import FakeSelect from '../package/select/fake-select'
 
 const components = [
-  Foo,
-];
+  EditableProTable,
+  ProTable,
+  SearchPage,
+  FakeSelect,
+  BasicDialog,
+]
 
 export function install(Framework) {
   return (Vue, opts) => {
